@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { services } from "./Services";
+
 import { opportunities } from "./Oportunity";
 import { SiWebauthn, SiCivicrm } from "react-icons/si";
 import { MdOutlineDesignServices } from "react-icons/md";
@@ -7,9 +7,6 @@ import { LiaDigitalTachographSolid } from "react-icons/lia";
 import { BiSolidBusiness } from "react-icons/bi";
 import { GrServices, GrOptimize } from "react-icons/gr";
 import { CiShoppingCart } from "react-icons/ci";
-
-
-
 
 
 export const services = [

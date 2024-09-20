@@ -15,11 +15,11 @@ const Home = () => {
       {/* About us */}
       <AboutUs />
 
-      {/* Company Testimonials */}
+      {/* Services social-swirl provided */}
       <Services />
 
       {/* teamMembers */}
-      <TeamMembers />
+      <TeamMembers/>
 
       {/* TESTIMONIAL */}
       <Testimonial />
