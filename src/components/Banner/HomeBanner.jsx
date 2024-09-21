@@ -8,11 +8,10 @@ const HomeBanner = () => {
         style={{ backgroundImage: "url(src/assets/Images/1.jpg)" }}
       >
         <div className="text-center space-y-6">
-          <h1 className="text-5xl md:text-8xl font-bold tracking-wide">
-            <span className="text-blue-900">YOUR</span>
-            <br />
-            <span className="text-blue-900 ml-2">SEARCH ENDS</span>
-            <span className="text-[#fec742] ml-2">HERE</span>
+          <h1 className="text-5xl md:text-8xl  font-bold tracking-wide">
+            <span className="text-[#1774E4] block">YOUR</span>
+            <span className="text-[#1774E4] ml-2">SEARCH ENDS</span>
+            <span className="text-[#FEC842] ml-2">HERE</span>
           </h1>
           <p className="text-lg md:text-xl font-bold text-black py-8">
             Web development with Social Swirl.
