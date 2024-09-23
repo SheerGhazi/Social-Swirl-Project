@@ -56,7 +56,7 @@ const ServiceCard = ({ title, icon, description }) => (
   <div className="flex items-start space-x-2 mb-4">
     <span className="text-blue-400 text-4xl">{icon}</span>
     <div>
-      <h3 className="font-bold text-lg">{title}</h3>
+      <h3 className="font-bold text-2xl">{title}</h3>
       <p className="text-black">{description}</p>
     </div>
   </div>
@@ -67,11 +67,11 @@ const Services = () => {
   return (
     <div className="bg-gradient-to-b from-sky-100 via-white to-sky-100">
       {/* ServiceCard */}
-      <div className="container mx-auto px-20 py-8">
+      <div className="container mx-auto px-20 py-8 space-y-10">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">
           From Idea to Completion, we bring Full-Stack
         </h1>
-        <p className="text-center text-gray-600 mb-8">
+        <p className="text-center text-base text-[#494848] mb-8">
           Social Swirl, founded by Danial Khan in 2022, is a dynamic software
           company based in the United Kingdom.
         </p>
@@ -82,7 +82,7 @@ const Services = () => {
         </div>
       </div>
       {/* CurrentOpportunity */}
-      <div className="container mx-auto px-4 md:px-10 lg:px-20 py-8">
+      <div className="w-full px-4  py-8">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 md:mb-8">
           Current Opportunities
         </h1>
@@ -93,20 +93,22 @@ const Services = () => {
                 key={index}
                 className="mb-4 pb-4 border-b border-gray-300 last:border-b-0"
               >
-                <div className="flex justify-between items-center">
+                
                   <h2
                     className="text-lg md:text-xl lg:text-2xl font-semibold cursor-pointer hover:text-blue-600"
                     onClick={() => setSelectedOpportunity(opportunity)}
                   >
                     {opportunity.title}
                   </h2>
+                  <div className="flex justify-between items-center">
+                  <p className="text-gray-600 mt-2 text-sm md:text-base lg:text-lg">
+                  {opportunity.description}
+                </p>
                   <button className="bg-blue-500 text-white px-3 lg:px-4 py-1.5 lg:py-2 rounded-full text-xs md:text-sm lg:text-base">
                     APPLY NOW
                   </button>
                 </div>
-                <p className="text-gray-600 mt-2 text-sm md:text-base lg:text-lg">
-                  {opportunity.description}
-                </p>
+                
               </div>
             ))}
           </div>
