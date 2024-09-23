@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,12 +52,12 @@ const Navbar = () => {
 
           {/* Navigation Links for larger screens */}
           <div className="hidden md:flex space-x-8 text-primary font-semibold text-xl" >
-            <a href="#home" className="hover:text-secondary transition duration-300 hover:underline">
+            <a href="/" className="hover:text-secondary transition duration-300 hover:underline">
               HOME
             </a>
-            <a href="#services" className="hover:text-secondary transition duration-300">
+            <Link to="/program" className="hover:text-secondary transition duration-300">
               SERVICES
-            </a>
+            </Link>
             <a href="#elearning" className="hover:text-secondary transition duration-300">
               E-LEARNING
             </a>
