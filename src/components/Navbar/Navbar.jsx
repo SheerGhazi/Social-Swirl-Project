@@ -10,8 +10,8 @@ const Navbar = () => {
 
   return (
     <nav className="absolute -top-10 left-0 right-0 z-10 bg-transparent">
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex justify-between items-center">
+      <div className="px-10  py-4">
+        <div className="flex justify-between items-center md:px-1">
           {/* Logo */}
           <div className="flex items-center">
             <img
@@ -51,7 +51,7 @@ const Navbar = () => {
           </div>
 
           {/* Navigation Links for larger screens */}
-          <div className="hidden md:flex space-x-8 text-primary font-semibold text-xl" >
+          <div className="hidden md:flex space-x-6 text-primary font-semibold text-lg" >
             <a href="/" className="hover:text-secondary transition duration-300 hover:underline">
               HOME
             </a>
