@@ -3,21 +3,22 @@ import Right_Image from "../../assets/Images/image4.webp"
 
 const Traine = () => {
   return (
-    <>
-      <div className="w-full  ">
-        <h3 className="text-blue-400 font-semibold text-3xl text-center">
+    < >
+     <h3 className="text-blue-400 font-semibold text-3xl text-center text-wrap mt-10">
           {" "}
           Work with experts, grow your skills, and shape the future of digital
           solutions
         </h3>
-        <div className="left-ctn w-full p-8 space-y-4  md:w-1/2 ">
-          <h1 className="font-bold text-xl text-black">TRAINEE PROGRAMS</h1>
-          <p className="font-normal text-base text-gray-900">
+      <div className="w-full md:flex px-12 mt-5  ">
+       
+        <div className="left-ctn w-full p-6 space-y-4  md:w-1/2 ">
+          <h1 className="font-bold text-4xl  text-black">TRAINEE PROGRAMS</h1>
+          <p className="font-normal text-lg text-gray-900">
             We specialize in delivering cutting-edge IT services tailored to
             meet the unique needs of businesses across industries. Our expert
             team is dedicated to providing .
           </p>
-          <ul className="text-base font-semibold">
+          <ul className="text-lg font-bold">
             <li>App Development</li>
             <li>Digital Marketing</li>
             <li>AI Solutions</li>
@@ -29,8 +30,8 @@ const Traine = () => {
             </button>
           </a>
         </div>
-        <div className="right-ctn w-full md:w-1/2">
-            <img className="cover" src={Right_Image} alt="" />
+        <div className="right-ctn w-full p-6 md:w-1/2 md:flex justify-center items-center " >
+            <img className="cover w-96 h-96 rounded-3xl" src={Right_Image} alt="" />
         </div>
       </div>
     </>
