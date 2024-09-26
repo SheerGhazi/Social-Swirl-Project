@@ -7,10 +7,10 @@ const OurProgram = () => {
       <div className="cont container bg-white px-4 py-2 rounded-3xl">
 
         <ul className='flex justify-evenly text-lg font-medium'>
-            <li><a href="#">INTERNSHIP PROGRAMS</a></li>
-            <li><a href="#">Trainee Program</a></li>
-            <li><a href="#">Trainee Program</a></li>
-            <li><a href="#">Courses</a></li>
+            <li><a href="#" className='hover:text-secondary'>INTERNSHIP PROGRAMS</a></li>
+            <li><a href="#" className='hover:text-secondary'>Trainee Program</a></li>
+            <li><a href="#" className='hover:text-secondary'>Trainee Program</a></li>
+            <li><a href="#" className='hover:text-secondary'>Courses</a></li>
         </ul>
       </div>
     </div>

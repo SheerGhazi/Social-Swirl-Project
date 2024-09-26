@@ -52,7 +52,7 @@ const Navbar = () => {
 
           {/* Navigation Links for larger screens */}
           <div className="hidden md:flex space-x-6 text-primary font-semibold text-lg" >
-            <a href="/" className="hover:text-secondary transition duration-300 hover:underline">
+            <a href="/" className="hover:text-secondary transition duration-300 ">
               HOME
             </a>
             <Link to="/program" className="hover:text-secondary transition duration-300">

@@ -33,12 +33,12 @@ const Traini3 = () => {
 
        <div className='w-full flex md:w-[65vw] '>
        <div className="left-ctn w-fit   md:w-1/2 md:flex flex-col justify-center items-center " >
-           <img className="cover w-72 h-72 rounded-3xl" src={Right_Image} alt="" />
+           <img className="cover w-72 h-72 cursor-pointer rounded-3xl transition-transform duration-300 ease-in-out transform hover:scale-105" src={Right_Image} alt="" />
            
        </div>
        <div className="right-ctn w-fit  md:w-1/2 md:flex flex-col justify-center items-center space-y-4 " >
-           <img className="cover w-72 h-72 rounded-3xl" src={Right_Image} alt="" />
-           <img className="cover w-72 h-72 rounded-3xl" src={Right_Image} alt="" />
+           <img className="cover w-72 h-72 cursor-pointer rounded-3xl transition-transform duration-300 ease-in-out transform hover:scale-105" src={Right_Image} alt="" />
+           <img className="cover w-72 h-72 cursor-pointer rounded-3xl transition-transform duration-300 ease-in-out transform hover:scale-105" src={Right_Image} alt="" />
        </div>
        </div>
      </div>
