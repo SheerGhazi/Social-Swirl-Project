@@ -1,5 +1,5 @@
 import React from 'react'
-import Right_Image from "../../assets/Images/image4.webp"
+import Right_Image from "../../assets/Images/Pgm2.png"
 
 const Traine2 = () => {
   return (
@@ -13,7 +13,7 @@ const Traine2 = () => {
      <div className="w-full md:flex  px-12 mt-5  ">
       
        <div className="right-ctn w-full p-6 md:w-1/2 md:flex justify-center items-center " >
-           <img className="cover w-96 h-96 rounded-3xl" src={Right_Image} alt="" />
+           <img className="cover w-auto h-[70vh] rounded-3xl" src={Right_Image} alt="" />
        </div>
 
        
