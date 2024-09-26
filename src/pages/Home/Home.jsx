@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       {/* hero */}
-      <HomeBanner />
+      <HomeBanner title1={"Your"} title2={"Search  ends"} title3={"here"} description={"Web Development with Social Swirl"} btn1={"Hire us now"} btn2={"Join us now"} />
 
       {/* About us */}
       <AboutUs />

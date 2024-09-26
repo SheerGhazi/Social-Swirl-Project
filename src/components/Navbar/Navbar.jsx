@@ -52,9 +52,9 @@ const Navbar = () => {
 
           {/* Navigation Links for larger screens */}
           <div className="hidden md:flex space-x-6 text-primary font-semibold text-lg" >
-            <a href="/" className="hover:text-secondary transition duration-300 ">
+            <Link to="/" className="hover:text-secondary transition duration-300 ">
               HOME
-            </a>
+            </Link>
             <Link to="/program" className="hover:text-secondary transition duration-300">
               SERVICES
             </Link>
@@ -76,12 +76,12 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden md:mt-0 -mt-8 space-y-2 text-blue-600 bg-gradient-to-b from-sky-100 to-[#c5f5f7] font-semibold text-center" style={{ fontSize: '20px' }}>
-            <a href="#home" className="block hover:text-secondary transition duration-300">
+            <Link to="/" className="block hover:text-secondary transition duration-300">
               HOME
-            </a>
-            <a href="#services" className="block hover:text-secondary transition duration-300">
+            </Link>
+            <Link to="/program" className="block hover:text-secondary transition duration-300">
               SERVICES
-            </a>
+            </Link>
             <a href="#elearning" className="block hover:text-secondary transition duration-300">
               E-LEARNING
             </a>
