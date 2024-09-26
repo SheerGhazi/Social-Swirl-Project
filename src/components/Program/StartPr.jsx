@@ -2,7 +2,7 @@ import React from 'react'
 
 const StartPr = () => {
   return (
-    <div className='w-full h-auto px-5 py-6 text-center text-white bg-blue-500 space-y-5 md:px-28'>
+    <div className='bg-gradient-to-r from-customLightBlue to-customBlue  w-full h-auto px-5 py-6 text-center text-white  space-y-5 md:px-72'>
       <div className="heading font-semibold text-3xl">
         <h4>Start a Project with us Today</h4>
       </div>
@@ -12,7 +12,7 @@ const StartPr = () => {
       </div>
       <div className='btn'>
       <a href="">
-        <button className='px-3 py-1 text-white font-normal text-base rounded-3xl border border-white'>
+        <button className='px-5 py-1 text-white font-normal text-base rounded-3xl border border-white hover:bg-white hover:text-primary'>
             Button
         </button>
       </a>

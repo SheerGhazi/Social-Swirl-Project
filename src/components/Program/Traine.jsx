@@ -4,7 +4,7 @@ import Right_Image from "../../assets/Images/Pgm1.png"
 const Traine = () => {
   return (
     < >
-     <h3 className="text-blue-400 font-semibold text-3xl text-center text-wrap mt-10">
+     <h3 className="text-blue-400 font-semibold text-3xl text-center  text-wrap mt-10 md:px-40">
           {" "}
           Work with experts, grow your skills, and shape the future of digital
           solutions
