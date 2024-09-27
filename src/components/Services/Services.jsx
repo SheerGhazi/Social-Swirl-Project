@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import { opportunities } from "./Oportunity";
 import { SiWebauthn, SiCivicrm } from "react-icons/si";
 import { MdOutlineDesignServices } from "react-icons/md";
@@ -67,7 +66,7 @@ const Services = () => {
   return (
     <div className="bg-gradient-to-b from-sky-100 via-white to-sky-100">
       {/* ServiceCard */}
-      <div className="container mx-auto px-20 py-8 space-y-10">
+      <div className="container mx-auto  space-y-10 px-3 py-5 md:px-20 py-8">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">
           From Idea to Completion, we bring Full-Stack
         </h1>
@@ -91,7 +90,7 @@ const Services = () => {
             {opportunities.map((opportunity, index) => (
               <div
                 key={index}
-                className="mb-4 pb-4 border-b border-gray-300 last:border-b-0"
+                className="flex flex-col gap-1  mb-4 pb-4 border-b border-gray-300 last:border-b-0"
               >
                 
                   <h2
@@ -100,11 +99,11 @@ const Services = () => {
                   >
                     {opportunity.title}
                   </h2>
-                  <div className="flex justify-between items-center">
+                  <div className="block md:flex justify-between items-center">
                   <p className="text-gray-600 mt-2 text-sm md:text-base lg:text-lg">
                   {opportunity.description}
                 </p>
-                  <button className="bg-blue-500 text-white px-3 lg:px-4 py-1.5 lg:py-2 rounded-full text-xs md:text-sm lg:text-base">
+                  <button className="bg-blue-500 text-white px-3 lg:px-4 py-1.5 lg:py-2 rounded-full text-xs mt-2 md:text-sm lg:text-base">
                     APPLY NOW
                   </button>
                 </div>
@@ -115,8 +114,8 @@ const Services = () => {
           <div className="w-full lg:w-2/5 lg:mt-0">
             <div className="h-64 md:h-80 lg:h-full p-4 md:p-6 relative overflow-hidden">
               {selectedOpportunity ? (
-                <div className="absolute inset-0 flex items-center justify-center text-white p-6 lg:px-10">
-                  <p className="text-sm md:text-base lg:text-lg">
+                <div className="absolute inset-0 flex items-center justify-center text-white p-6 lg:px-10 ">
+                  <p className="text-sm block md:text-base lg:text-lg">
                     {selectedOpportunity.details}
                   </p>
                 </div>
@@ -124,7 +123,7 @@ const Services = () => {
               <img
                 src="src/assets/Images/A7.jpg"
                 alt="Technology background"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover block"
               />
             </div>
           </div>

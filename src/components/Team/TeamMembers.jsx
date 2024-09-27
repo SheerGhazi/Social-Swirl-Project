@@ -1,13 +1,14 @@
 import React from "react";
-import TeamMember1 from "../../assets/Images/TeamMember1.png"
+import TeamMember1 from "../../assets/Images/TeamMembers/TM6.png"
+
 
 const teamMember = [
-  { name: "Haider", image: "src/assets/Images/image4.webp" },
-  { name: "2Lorem Ipsum", image: "src/assets/Images/image4.webp" },
-  { name: "3Lorem Ipsum", image: "src/assets/Images/image4.webp" },
-  { name: "4Lorem Ipsum", image: "src/assets/Images/image4.webp" },
-  { name: "5Lorem Ipsum", image: "src/assets/Images/image4.webp" },
-  { name: "6Lorem Ipsum", image: "src/assets/Images/image4.webp" },
+  { name: "Haider", image: "src/assets/Images/TeamMembers/TM1.png" },
+  { name: "2Lorem Ipsum", image: "src/assets/Images/TeamMembers/TM2.png" },
+  { name: "3Lorem Ipsum", image: "src/assets/Images/TeamMembers/TM3.png" },
+  { name: "4Lorem Ipsum", image: "src/assets/Images/TeamMembers/TM4.png" },
+  { name: "5Lorem Ipsum", image: "src/assets/Images/TeamMembers/TM5.png" },
+  { name: "6Lorem Ipsum", image: "src/assets/Images/TeamMembers/TM6.png" },
 ];
 
 // import { teamMember } from "./teamMember"; // Ensure the path is correct
@@ -17,7 +18,7 @@ const TeamMembers = () => {
   return (
     <div className="bg-gradient-to-b from-sky-100 to-[#c5f5f7] py-20 px-3 md:px-16">
       <div className="flex flex-col md:flex-row items-center justify-between">
-        <div className="text-center md:text-left md:w-1/2 mb-8 md:mb-0 lg:ml-24">
+        <div className="text-center md:text-left md:w-1/2 mb-8 md:mb-0 md:px-10 md:pr-32 lg:ml-24">
           <h2 className="text-2xl md:text-4xl font-bold text-black mb-6">
             Meet Our Team
           </h2>
@@ -38,7 +39,7 @@ const TeamMembers = () => {
         
 
         {/* Image Section */}
-        <div className="relative md:w-1/2 flex justify-center items-center mt-16 md:mt-0">
+        <div className=" hidden  md:w-1/2 md:flex justify-center items-center mt-16 md:mt-0">
           {/* Center Image */}
           <div className="relative w-96 h-96 border-2 border-black rounded-full flex items-center justify-center">
             <img

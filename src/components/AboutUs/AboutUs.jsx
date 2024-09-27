@@ -5,7 +5,7 @@ const AboutUs = () => {
     <div className="bg-gradient-to-b from-[#c5f5f7] to-sky-100 min-h-screen flex items-center justify-center p-4">
     <div className="bg-white rounded-3xl shadow-lg overflow-hidden max-w-6xl w-full">
       <div className="flex flex-col md:flex-row">
-        <div className="p-16 md:w-2/3">
+        <div className="p-2 md:p-16 md:w-2/3">
           <h2 className="text-3xl font-bold mb-4">About Us</h2>
           <p className="text-[#494848] font-normal text-lg leading-relaxed">
             Social Swirl, founded by Danial Khan in 2022, is a dynamic
