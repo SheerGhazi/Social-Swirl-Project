@@ -52,7 +52,7 @@ export const services = [
 ];
 
 const ServiceCard = ({ title, icon, description }) => (
-  <div className="flex items-start space-x-2 mb-4">
+  <div className="flex  items-start space-x-2 mb-4">
     <span className="text-blue-400 text-4xl">{icon}</span>
     <div>
       <h3 className="font-bold text-2xl">{title}</h3>
@@ -64,9 +64,9 @@ const ServiceCard = ({ title, icon, description }) => (
 const Services = () => {
   const [selectedOpportunity, setSelectedOpportunity] = useState(null);
   return (
-    <div className="bg-gradient-to-b from-sky-100 via-white to-sky-100">
+    <div className=" bg-gradient-to-b from-sky-100 via-white to-sky-100">
       {/* ServiceCard */}
-      <div className="container mx-auto  space-y-10 px-3 py-5 md:px-20 py-8">
+      <div className="flex flex-col justify-center   container mx-auto  space-y-10 px-3 py-5 md:px-20 md:py-8">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">
           From Idea to Completion, we bring Full-Stack
         </h1>
