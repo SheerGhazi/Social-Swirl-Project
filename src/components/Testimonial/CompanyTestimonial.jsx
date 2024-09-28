@@ -10,7 +10,7 @@ import { companytestimonials } from "./companytestimonials"
 
 const CompanyTestimonial = () => {
   return (
-    <div className="bg-[#c5f5f7] min-h-screen flex flex-col items-center justify-center p-4">
+    <div className=" min-h-screen flex flex-col items-center justify-center p-4 md:my-10">
     <h1 className="text-3xl md:text-4xl font-bold mb-8 lg:mb-20 lg:-m-40 text-center">
       What Companies Say about us
     </h1>

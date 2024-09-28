@@ -19,7 +19,7 @@ const AboutUs = () => {
             transparency, and open communication.
           </p>
         </div>
-        <div className="md:w-1/3 p-10 object-cover">
+        <div className="md:w-1/3 p-5 object-cover lg:p-10">
           <img
             src="src/assets/Images/image4.webp"
             alt="Person typing on laptop"

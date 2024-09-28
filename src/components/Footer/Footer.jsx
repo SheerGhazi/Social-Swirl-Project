@@ -16,8 +16,8 @@ const Footer = () => {
 
           {/* Column 2 - Our Company */}
           <div>
-            <h3 className="text-lg font-bold text-black mb-4">OUR COMPANY</h3>
-            <p className="text-black text-sm">
+            <h3 className="text-xl font-bold text-black mb-4">OUR COMPANY</h3>
+            <p className="text-[#3A3737] text-sm">
               Dolor Ullamcorper Est, Eaqua Penatibus Inventore Eius Quod Exercitation Eiusmod
               Esse. Quos, Proident Varius, Dicta Quae Mauris, Impedit. Iste Ullamcorper Mollit.
             </p>
@@ -25,17 +25,17 @@ const Footer = () => {
 
           {/* Column 3 - Useful Links */}
           <div>
-            <h3 className="text-lg font-bold text-black mb-4">USEFUL LINKS</h3>
+            <h3 className="text-xl font-bold text-black mb-4">USEFUL LINKS</h3>
             
           </div>
 
           {/* Column 4 - Contact Detail */}
           <div>
-            <h3 className="text-lg font-bold text-black mb-4">CONTACT DETAIL</h3>
-            <p className="text-black text-xs font-semibold">
+            <h3 className="text-xl font-bold text-black mb-4">CONTACT DETAIL</h3>
+            <p className="text-[#3A3737] text-xs font-semibold">
               FEEL FREE TO CONTACT & REACH US !
             </p>
-            <p className="text-black text-sm my-10">
+            <p className="text-[#3A3737] text-sm my-10">
               ADDRESS: OFFICE# 16, P1 FLOOR,
               JEFF HEIGHT ROAD, LAHORE.
             </p>
@@ -46,12 +46,15 @@ const Footer = () => {
 
           {/* Column 5 - Quick Links */}
           <div>
-            <h3 className="text-lg font-bold text-black mb-4">QUICK LINKS</h3>
+            <h3 className="text-xl font-bold text-black mb-4">QUICK LINKS</h3>
            
           </div>
         </div>
+           
 
-        <div className="border-t border-gray-700 mt-8 pt-4">
+         
+        <div className=" mt-8 pt-4">
+        <hr className='bg-black h-[1px]' />
           <p className="text-black text-sm">All rights reserved</p>
         </div>
       </div>
