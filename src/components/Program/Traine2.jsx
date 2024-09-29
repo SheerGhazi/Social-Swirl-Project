@@ -4,20 +4,20 @@ import Right_Image from "../../assets/Images/Pgm2.png"
 const Traine2 = () => {
   return (
     < >
-    <h3 className="text-blue-400 font-semibold text-3xl text-center text-wrap mt-10">
+    <h3 className="text-blue-400 font-semibold px-1 text-3xl text-center text-wrap mt-10">
          {" "}
 
          Work with experts, grow your skills, and shape the future of digital solutions
 
        </h3>
-     <div className="w-full md:flex px-20 mt-5  ">
+     <div className="w-full md:flex md:px-20 mt-5  ">
       
-       <div className="right-ctn w-full p-6 md:w-1/2 md:flex justify-center items-center " >
-           <img className="cover w-auto h-[70vh] cursor-pointer rounded-3xl transition-transform duration-300 ease-in-out transform hover:scale-105" src={Right_Image} alt="" />
+       <div className="right-ctn w-full p-2 md:w-1/2 md:flex md:p-6 justify-center items-center " >
+           <img className="cover w-auto h-auto  cursor-pointer rounded-3xl transition-transform duration-300 ease-in-out transform md:h-[70vh] hover:scale-105" src={Right_Image} alt="" />
        </div>
 
        
-       <div className="left-ctn w-full p-6  space-y-4 flex flex-col justify-center  md:w-1/2  md:pr-40  ">
+       <div className="left-ctn w-full p-6  space-y-4 flex flex-col justify-center  md:w-[40vw] lg:w-1/2  lg:pr-40  ">
          <h1 className="font-bold text-4xl  text-black">TRAINEE PROGRAMS</h1>
          <p className="font-normal text-base text-gray-900">
            We specialize in delivering cutting-edge IT services tailored to

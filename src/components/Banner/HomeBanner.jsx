@@ -7,8 +7,8 @@ const HomeBanner = ({ title1, title2, title3, description, btn1, btn2 }) => {
         className="w-full min-h-screen flex items-center justify-center bg-cover bg-center lg:-mb-10"
         style={{ backgroundImage: "url(src/assets/Images/1.jpg)" }}
       >
-        <div className="text-center space-y-6 mt-20">
-          <h1 className="text-5xl md:text-8xl  font-bold uppercase tracking-wide space-x-3">
+        <div className="text-center px-4 space-y-6 mt-20">
+          <h1 className="  text-4xl md:text-7xl  font-bold uppercase tracking-wide space-x-3">
             <span className="text-primary block ">{title1}</span>
             <span className="text-primary ml-2">{title2}</span>
             <span className="text-secondary ml-4">{title3}</span>
