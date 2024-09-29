@@ -21,13 +21,14 @@ const ProgramPage = () => {
   return (
     <div>
       {PgmDetails.map((program, index) => (
-        <HomeBanner
+        <HomeBanner 
           key={index}
           title1={program.title1}
           title2={program.title2}
           title3={program.title3}
           description={program.description}
           btn1={program.btn1}
+          
         />
       ))}
       <OurProgram />
