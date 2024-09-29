@@ -29,14 +29,13 @@ const InternProgramData = [
   },
 ];
 
-
 const InternProgram = () => {
   return (
     <div className='w-full h-auto flex flex-col text-center gap-10 py-10 '>
       <div className="heading text-blue-400 font-semibold text-3xl">INTERNSHIP PROGRAMS</div>
-      <div className="cards flex flex-col justify-evenly md:flex-row ">
+      <div className="cards flex flex-col justify-evenly items-center md:flex-row ">
         {InternProgramData.map((intern, index) => (
-          <a key={index} href={intern.link} target="_blank" rel="noopener noreferrer">
+          <a className='flex flex-col justify-center items-center space-y-5' key={index} href={intern.link} target="_blank" rel="noopener noreferrer">
             <InternCard title={intern.title} image={intern.image} />
           </a>
         ))}
