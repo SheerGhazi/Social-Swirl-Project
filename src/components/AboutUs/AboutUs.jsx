@@ -23,7 +23,7 @@ const AboutUs = () => {
           <img
             src="src/assets/Images/image4.webp"
             alt="Person typing on laptop"
-            className="w-full h-full  rounded-2xl"
+            className="w-full h-full  rounded-2xl transition-transform duration-300 ease-in-out transform hover:scale-105"
           />
         </div>
       </div>

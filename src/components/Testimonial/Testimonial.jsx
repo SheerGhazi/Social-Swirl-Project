@@ -19,15 +19,15 @@ const Testimonial = () => {
                 <img
                   src={cln_img}
                   alt="Client with certificate"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-105"
                 />
               </div>
-              <div className="bg-black opacity-45 text-white p-2 flex flex-col justify-between  md:w-4/6 md:p-8 ">
+              <div className="bg-black opacity-45 text-white p-2 flex flex-col justify-between  md:w-4/6 md:p-8 transition-transform duration-300 ease-in-out transform hover:scale-105 ">
                 <div className="">
                   <h3 className="text-2xl font-semibold mb-4">
                     Rescue their projects
                   </h3>
-                  <p className="mb-4 text-[#EDEDED99] opacity-85">
+                  <p className="mb-4 text-[#EDEDED99] opacity-85 ">
                     Lorem ipsum dolor sit amet consectetur. Massa eget urna sed
                     id commodo sed consequat rhoncus. Urna quis leo euismod
                     neque egestas pellentesque. Ac nunc mattis cursus gravida a

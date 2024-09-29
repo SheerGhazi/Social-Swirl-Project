@@ -7,11 +7,10 @@ import { BiSolidBusiness } from "react-icons/bi";
 import { GrServices, GrOptimize } from "react-icons/gr";
 import { CiShoppingCart } from "react-icons/ci";
 
-
 export const services = [
   {
     title: "Web Development",
-    icon: <SiWebauthn/>,
+    icon: <SiWebauthn />,
     description: "Lorem Ipsum es simplemente el texto de relleno de las",
   },
   {
@@ -92,22 +91,22 @@ const Services = () => {
                 key={index}
                 className="flex flex-col gap-1  mb-4 pb-4 border-b border-gray-300 last:border-b-0"
               >
-                
-                  <h2
-                    className="text-lg md:text-xl lg:text-2xl font-semibold cursor-pointer hover:text-blue-600"
-                    onClick={() => setSelectedOpportunity(opportunity)}
-                  >
-                    {opportunity.title}
-                  </h2>
-                  <div className="block md:flex justify-between items-center">
+                <h2
+                  className="text-lg md:text-xl lg:text-2xl font-semibold cursor-pointer hover:text-blue-600"
+                  onClick={() => setSelectedOpportunity(opportunity)}
+                >
+                  {opportunity.title}
+                </h2>
+                <div className="block md:flex justify-between items-center">
                   <p className="text-gray-600 mt-2 text-sm md:text-base lg:text-lg">
-                  {opportunity.description}
-                </p>
-                  <button className="bg-blue-500 text-white px-3 lg:px-4 py-1.5 lg:py-2 rounded-full text-xs mt-2 md:text-sm lg:text-base">
-                    APPLY NOW
-                  </button>
+                    {opportunity.description}
+                  </p>
+                  <a href="#">
+                    <button className="bg-primary text-white px-3 lg:px-4 py-1.5 lg:py-2 rounded-full text-xs  hover:bg-blue-400 mt-2 md:text-sm lg:text-base">
+                      APPLY NOW
+                    </button>
+                  </a>
                 </div>
-                
               </div>
             ))}
           </div>
@@ -123,7 +122,7 @@ const Services = () => {
               <img
                 src="src/assets/Images/A7.jpg"
                 alt="Technology background"
-                className="w-full h-full object-cover block"
+                className="w-full h-full object-cover block  transition-transform duration-300 ease-in-out transform hover:scale-105"
               />
             </div>
           </div>

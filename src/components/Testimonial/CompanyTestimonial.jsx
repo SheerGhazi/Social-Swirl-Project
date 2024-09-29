@@ -30,12 +30,12 @@ const CompanyTestimonial = () => {
       className="max-w-6xl w-full "
     >
       {companytestimonials.map((testimonial, index) => (
-        <SwiperSlide key={index}>
+        <SwiperSlide key={index} className='space-y-5'>
           <div className="flex flex-col items-center text-center lg:mb-16">
             <img
               src={testimonial.logo}
               alt={`${testimonial.name} logo`}
-              className="w-16 h-16 mb-4 rounded-full"
+              className="w-16 h-16 mb-4 rounded-full transition-transform duration-300 ease-in-out transform hover:scale-105"
             />
             <h2 className="text-xl font-semibold mb-2">{testimonial.name}</h2>
             <p className="text-sm">{testimonial.text}</p>

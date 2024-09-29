@@ -5,9 +5,9 @@ import TeamMember1 from "../../assets/Images/TeamMembers/TM6.png"
 const teamMember = [
   { name: "Haider", image: "src/assets/Images/TeamMembers/TM1.png" },
   { name: "2Lorem Ipsum", image: "src/assets/Images/TeamMembers/TM2.png" },
-  { name: "3Lorem Ipsum", image: "src/assets/Images/TeamMembers/TM3.png" },
+  { name: "Hammad", image: "src/assets/Images/TeamMembers/TM3.png" },
   { name: "4Lorem Ipsum", image: "src/assets/Images/TeamMembers/TM4.png" },
-  { name: "5Lorem Ipsum", image: "src/assets/Images/TeamMembers/TM5.png" },
+  { name: "Awais", image: "src/assets/Images/TeamMembers/TM5.png" },
   { name: "6Lorem Ipsum", image: "src/assets/Images/TeamMembers/TM6.png" },
 ];
 
@@ -45,7 +45,7 @@ const TeamMembers = () => {
             <img
               src={TeamMember1}
               alt="Team Lead"
-              className="w-48 h-48 p-5 rounded-full object-cover"
+              className="w-48 h-48 p-5 rounded-full cursor-pointer object-cover transition-transform duration-300 ease-in-out transform hover:scale-105 "
             />
             <p className="absolute bottom-24 text-white text-lg text-center ">
               Lorem Ipsum
@@ -59,7 +59,7 @@ const TeamMembers = () => {
               <img
                 src={teamMember[0].image}
                 alt={teamMember[0].name}
-                className="w-32 h-32 rounded-full object-cover"
+                className="w-32 h-32 rounded-full cursor-pointer object-cover transition-transform duration-300 ease-in-out transform hover:scale-105"
               />
               <p className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-white text-xs text-center ">
                 {teamMember[0].name}
@@ -71,7 +71,7 @@ const TeamMembers = () => {
               <img
                 src={teamMember[1].image}
                 alt={teamMember[1].name}
-                className="w-32 h-32 rounded-full object-cover"
+                className="w-32 h-32 rounded-full cursor-pointer object-cover transition-transform duration-300 ease-in-out transform hover:scale-105"
               />
               <p className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-white text-xs text-center ">
                 {teamMember[1].name}
@@ -83,7 +83,7 @@ const TeamMembers = () => {
               <img
                 src={teamMember[2].image}
                 alt={teamMember[2].name}
-                className="w-32 h-32 rounded-full object-cover"
+                className="w-32 h-32 rounded-full cursor-pointer object-cover transition-transform duration-300 ease-in-out transform hover:scale-105"
               />
               <p className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-white text-xs text-center ">
                 {teamMember[2].name}
@@ -95,7 +95,7 @@ const TeamMembers = () => {
               <img
                 src={teamMember[3].image}
                 alt={teamMember[3].name}
-                className="w-32 h-32 rounded-full  object-cover"
+                className="w-32 h-32 rounded-full cursor-pointer  object-cover transition-transform duration-300 ease-in-out transform hover:scale-105"
               />
               <p className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-white text-xs text-center ">
                 {teamMember[3].name}
@@ -107,7 +107,7 @@ const TeamMembers = () => {
               <img
                 src={teamMember[4].image}
                 alt={teamMember[4].name}
-                className="w-32 h-32 rounded-full  object-cover"
+                className="w-32 h-32 rounded-full cursor-pointer  object-cover transition-transform duration-300 ease-in-out transform hover:scale-105"
               />
               <p className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-white text-xs text-center ">
                 {teamMember[4].name}
@@ -119,7 +119,7 @@ const TeamMembers = () => {
               <img
                 src={teamMember[5].image}
                 alt={teamMember[5].name}
-                className="w-32 h-32 rounded-full object-cover"
+                className="w-32 h-32 rounded-full cursor-pointer object-cover transition-transform duration-300 ease-in-out transform hover:scale-105"
               />
               <p className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-white text-xs text-center ">
                 {teamMember[5].name}

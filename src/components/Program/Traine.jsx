@@ -31,7 +31,7 @@ const Traine = () => {
           </a>
         </div>
         <div className="right-ctn w-full p-6 md:w-1/2 md:flex justify-center items-center " >
-            <img className="cover w-auto  h-auto  cursor-pointer rounded-3xl transition-transform duration-300 ease-in-out transform md:h-[70vh] hover:scale-105" src={Right_Image} alt="" />
+            <img className="cover w-auto  h-auto  cursor-pointer rounded-3xl transition-transform duration-300 ease-in-out transform hover:scale-105 md:h-[70vh] " src={Right_Image} alt="" />
         </div>
       </div>
     </>
