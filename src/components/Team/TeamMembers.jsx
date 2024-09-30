@@ -106,20 +106,3 @@ const TeamMembers = () => {
 export default TeamMembers;
 
 
-// {members.map((member, index) => (
-//   <div key={index} className={`relative ${selectedMember === index ? "block" : "hidden"}`}>
-//     <img
-//       src={member.image}
-//       alt={member.name}
-//       className={`w-32 h-32 rounded-full cursor-pointer object-cover transition-transform duration-300 ease-in-out transform ${
-//         selectedMember === index
-//           ? "scale-110 border-2 border-primary"
-//           : "border-transparent"
-//       }`}
-//       onClick={() => setSelectedMember(selectedMember === index ? null : index)} // Assuming you're using a state setter
-//     />
-//     <p className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-white text-xs text-center">
-//       {member.name}
-//     </p>
-//   </div>
-// ))}
