@@ -51,7 +51,7 @@ export const services = [
 ];
 
 const ServiceCard = ({ title, icon, description }) => (
-  <div className="flex  items-start space-x-2 mb-4">
+  <div className="flex  items-start space-x-2 mb-4 hover:transition-transform duration-300 ease-in-out transform hover:scale-105 hover:text-primary">
     <span className="text-blue-400 text-4xl">{icon}</span>
     <div>
       <h3 className="font-bold text-2xl">{title}</h3>
@@ -102,8 +102,8 @@ const Services = () => {
                     {opportunity.description}
                   </p>
                   <a href="#">
-                    <button className="bg-primary text-white px-3 lg:px-4 py-1.5 lg:py-2 rounded-full text-xs  hover:bg-blue-400 mt-2 md:text-sm lg:text-base">
-                      APPLY NOW
+                    <button className="bg-primary text-white px-3 lg:px-4 py-1.5 lg:py-2 rounded-full text-xs tracking-widest  hover:bg-blue-400 mt-2 md:text-sm lg:text-base">
+                      Details
                     </button>
                   </a>
                 </div>

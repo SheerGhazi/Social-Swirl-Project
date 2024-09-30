@@ -58,13 +58,18 @@ const HomeBanner = ({ title1, title2, title3, description, btn1, btn2 }) => {
             {description}
           </p>
           <div className="flex justify-center space-x-4">
+          <a href="#">
             <button className="bg-[#5BA5FF] text-white uppercase font-medium py-3 px-6 rounded hover:bg-blue-600">
               {btn1}
             </button>
+            </a>
+            
             {btn2 && (
+              <a href="#">
               <button className="bg-[#5BA5FF] uppercase text-white font-medium py-3 px-6 rounded hover:bg-blue-600">
                 {btn2}
               </button>
+              </a>
             )}
           </div>
         </div>

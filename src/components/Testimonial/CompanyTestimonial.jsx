@@ -19,7 +19,7 @@ const CompanyTestimonial = () => {
       spaceBetween={30}
       slidesPerView={1}
       loop={true}
-      autoplay={{ delay: 3000 }}
+      autoplay={{ delay: 1500 }}
       pagination={{ clickable: true }}
       breakpoints={{
         768: {
