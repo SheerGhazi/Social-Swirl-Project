@@ -7,6 +7,7 @@ import { BiSolidBusiness } from "react-icons/bi";
 import { GrServices, GrOptimize } from "react-icons/gr";
 import { CiShoppingCart } from "react-icons/ci";
 
+
 export const services = [
   {
     title: "Web Development",
@@ -62,6 +63,12 @@ const ServiceCard = ({ title, icon, description }) => (
 
 const Services = () => {
   const [selectedOpportunity, setSelectedOpportunity] = useState(null);
+  let HandleOnClick = (e) => {
+    setSelectedOpportunity(e)
+    console.log(selectedOpportunity);
+
+
+  }
   return (
     <div className=" bg-gradient-to-b from-sky-100 via-white to-sky-100">
       {/* ServiceCard */}
@@ -79,6 +86,9 @@ const Services = () => {
           ))}
         </div>
       </div>
+
+
+
       {/* CurrentOpportunity */}
       <div className="w-full px-4  py-8">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 md:mb-8">
@@ -101,29 +111,36 @@ const Services = () => {
                   <p className="text-gray-600 mt-2 text-sm md:text-base lg:text-lg">
                     {opportunity.description}
                   </p>
-                  <a href="#">
-                    <button className="bg-primary text-white px-3 lg:px-4 py-1.5 lg:py-2 rounded-full text-xs tracking-widest  hover:bg-blue-400 mt-2 md:text-sm lg:text-base">
-                      Details
-                    </button>
-                  </a>
+                  <button
+                    onClick={() => HandleOnClick(opportunity)}
+                    className="bg-primary text-white px-3 lg:px-4 py-1.5 lg:py-2 rounded-full text-xs tracking-widest focus:bg-blue-400  hover:bg-blue-400 mt-2 md:text-sm lg:text-base">
+                    Details
+                  </button>
                 </div>
               </div>
             ))}
           </div>
           <div className="w-full lg:w-2/5 lg:mt-0">
             <div className="h-64 md:h-80 lg:h-full p-4 md:p-6 relative overflow-hidden">
-              {selectedOpportunity ? (
-                <div className="absolute inset-0 flex items-center justify-center text-white p-6 lg:px-10 ">
-                  <p className="text-sm block md:text-base lg:text-lg">
-                    {selectedOpportunity.details}
-                  </p>
+              {selectedOpportunity != null ? (
+                <div className="w-full border-[1px] rounded-lg border-gray-300 px-10 py-10 h-full">
+                  <h2 className="text-lg md:text-xl lg:text-2xl font-semibold cursor-pointer hover:text-blue-600">
+                    {selectedOpportunity.title}
+
+                    <ul className="ml-6 mt-5 list-disc text-black text-lg md:text-xl font-semibold space-y-4">
+                      {
+                        selectedOpportunity.detailsStep.map((step, index) => (
+                          <li key={index} className="text-sm md:text-base font-normal lg:text-[16px]">
+                            {step.step}
+                          </li>
+                        ))
+                      }
+                    </ul>
+                  </h2>
                 </div>
-              ) : null}
-              <img
-                src="src/assets/Images/A7.jpg"
-                alt="Technology background"
-                className="w-full h-full object-cover block  transition-transform duration-300 ease-in-out transform hover:scale-105"
-              />
+              ) : (<div className="w-full border-[1px] rounded-lg border-gray-300 px-8 py-10 h-full">
+               <h2 className="text-lg  md:text-xl lg:text-2xl font-semibold cursor-pointer hover:text-blue-600 capitalize">Check the step of opportunities</h2>
+              </div>)}
             </div>
           </div>
         </div>

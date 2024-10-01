@@ -24,6 +24,17 @@ const TeamMembers = () => {
       setDiscription(null)
     }, 4000);
   };
+  let HandleOnMouseEnter = (index , member) => {
+    setSelectedMember(index);
+    setDiscription(member.discription)
+    setImgHidden('hidden')
+  }
+  let HandleOnMouseLeave = () =>{
+    setSelectedMember(null);
+    setDiscription(null)
+    setImgHidden('block')
+    
+  }
   
   return (
     <div className="bg-gradient-to-b from-sky-100 to-[#c5f5f7] py-20 px-3 md:px-16">
@@ -43,7 +54,9 @@ const TeamMembers = () => {
               <li
                 key={index}
                 onClick={() => handleMemberClick(index, member)}
-                className={`cursor-pointer hover:text-primary  ${selectedMember === index ? "text-primary border-primary" : ""
+                onMouseEnter={() => HandleOnMouseEnter(index , member)}
+                onMouseLeave={() => HandleOnMouseLeave(index , member)}
+                className={`cursor-pointer hover:text-primary w-max  ${selectedMember === index ? "text-primary border-primary" : ""
                   }`}
               >
                 {member.designation}
