@@ -94,7 +94,7 @@ const Services = () => {
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 md:mb-8">
           Current Opportunities
         </h1>
-        <div className="flex flex-col lg:flex-row bg-white">
+        <div className="flex flex-col lg:flex-row bg-white h-full">
           <div className="w-full lg:w-3/5 p-4 md:p-6 lg:p-10">
             {opportunities.map((opportunity, index) => (
               <div
@@ -121,9 +121,9 @@ const Services = () => {
             ))}
           </div>
           <div className="w-full lg:w-2/5 lg:mt-0">
-            <div className="h-64 md:h-80 lg:h-full p-4 md:p-6 relative overflow-hidden">
+            <div className=" lg:h-full p-4 md:p-6 relative overflow-hidden">
               {selectedOpportunity != null ? (
-                <div className="w-full border-[1px] rounded-lg border-gray-300 px-10 py-10 h-full">
+                <div className="w-full border-[1px] rounded-lg max-md:h-auto border-gray-300 px-10 max-md:px-5 max-md:py-5 py-10 h-full">
                   <h2 className="text-lg md:text-xl lg:text-2xl font-semibold cursor-pointer hover:text-blue-600">
                     {selectedOpportunity.title}
 
